@@ -256,13 +256,13 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-bg.jpg");
   background-size: cover;
 }
 
-#hero:before {
+#hero-overlay {
   content: "";
   background: var(--color-hero);
   position: absolute;
@@ -271,6 +271,8 @@ h6 {
   left: 0;
   right: 0;
   z-index: 1;
+  width: 100vw;
+  height: 100vh;
 }
 
 #hero .hero-container {
